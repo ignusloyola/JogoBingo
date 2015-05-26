@@ -159,6 +159,7 @@ public class sorteio {
         discricao.add(58,"chuva");
         discricao.add(59,"muleque");
         discricao.add(60,"homem");
+        discricao.add(61,"Mailton o Gatão");
     }
     public void sorteio(int qtd, ArrayList list)
     {
