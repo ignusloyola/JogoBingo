@@ -94,7 +94,7 @@ public class Principal extends javax.swing.JFrame {
         
     }
     
-    public void desabilitaEscolha()
+    public void desabilitaEscolha()//sjhdjsd
     {
         lblSele1.setVisible(false);
         lblSele2.setVisible(false);
