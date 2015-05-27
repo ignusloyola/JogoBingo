@@ -181,27 +181,7 @@ public class sorteio1 {
 				y=false;
 			}
 		}
-                 boolean z=true;
-				
-		while(z){
-			
-			if(discricao.size()!=5){
-				
-			int num = (int) (Math.random()*discricao.size());
-			System.out.println(discricao.get(num));
-                        list.add(num);
-			discricao.remove(num);
-			
-			}
-			else{
-				z=false;
-			}
-		}
+                 
     }
-    
-    
-            
-    
-    
-    
+       
 }
