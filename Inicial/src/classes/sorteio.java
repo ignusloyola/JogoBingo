@@ -113,52 +113,52 @@ public class sorteio {
         
         discricao.add(19,"Veado");
         discricao.add(20,"Criar dificuldades. Vangloriar-se.");
-        discricao.add(21,"xadrez");
-        discricao.add(22,"chuva");
-        discricao.add(23,"muleque");
-        discricao.add(24,"homem");
+        discricao.add(21,"Qualquer pessoa.");
+        discricao.add(22,"Desconfiado");
+        discricao.add(23,"Zombar. Fazer troça.");
+        discricao.add(24,"Pênis.");
         
-        discricao.add(25,"Coisa trabalhosa, complicada, embrulhada, intrincada.");
-        discricao.add(26,"terra");
-        discricao.add(27,"xadrez");
-        discricao.add(28,"chuva");
-        discricao.add(29,"muleque");
-        discricao.add(30,"homem");
+        discricao.add(25,"Bêbado, doente.");
+        discricao.add(26,"Em grande velocidade.");
+        discricao.add(27,"Chuveiro.");
+        discricao.add(28,"Porrada, chibatada, chicotada.");
+        discricao.add(29,"Cócoras. (Estar de coca é estar abaixado, acocorado).");
+        discricao.add(30,"Aquele que dá abrigo a criminosos.");
         
-        discricao.add(31,"Coisa trabalhosa, complicada, embrulhada, intrincada.");
-        discricao.add(32,"terra");
-        discricao.add(33,"xadrez");
-        discricao.add(34,"chuva");
-        discricao.add(35,"muleque");
-        discricao.add(36,"homem");
+        discricao.add(31,"Pessoa simpática, agradável.");
+        discricao.add(32,"Indivíduo muito bom em alguma coisa.Eita cabra bom da molesta.");
+        discricao.add(33,"Fazer alguém esperar.");
+        discricao.add(34,"Cutucar a bunda de alguém com o dedo.");
+        discricao.add(35,"Pessoa que tem um comportamento instável.");
+        discricao.add(36,"Desajeitado. Torto.");
         
-        discricao.add(37,"Coisa trabalhosa, complicada, embrulhada, intrincada.");
-        discricao.add(38,"terra");
-        discricao.add(39,"xadrez");
-        discricao.add(40,"chuva");
-        discricao.add(41,"muleque");
-        discricao.add(42,"homem");
+        discricao.add(37,"Deteriorado");
+        discricao.add(38,"Trocar dinheiro.");
+        discricao.add(39,"Estragado.Revirado.");
+        discricao.add(40,"Desgraça");
+        discricao.add(41,"Tornar-se furioso. Embravecer.");
+        discricao.add(42,"Enrolar. Remanchar.");
         
-        discricao.add(43,"Coisa trabalhosa, complicada, embrulhada, intrincada.");
-        discricao.add(44,"terra");
-        discricao.add(45,"xadrez");
-        discricao.add(46,"chuva");
-        discricao.add(47,"muleque");
-        discricao.add(48,"homem");
+        discricao.add(43,"Engravidar.");
+        discricao.add(44,"Chateado, de cara feia.");
+        discricao.add(45,"Molhado, ensopado. (Empapado de suor).");
+        discricao.add(46,"Molhado, ensopado. (Empapado de suor).");
+        discricao.add(47,"Empacar. Criar dificuldades.");
+        discricao.add(48,"Engravidar");
         
-        discricao.add(49,"Coisa trabalhosa, complicada, embrulhada, intrincada.");
-        discricao.add(50,"terra");
-        discricao.add(51,"xadrez");
-        discricao.add(52,"chuva");
-        discricao.add(53,"muleque");
-        discricao.add(54,"homem");
+        discricao.add(49,"Desconfiado");
+        discricao.add(50,"Não casou. Ficou pra titia.");
+        discricao.add(51,"Ruim. De má qualidade");
+        discricao.add(52,"Família");
+        discricao.add(53,"Histeria passageira. Reação.violenta e afetada.(Coisa de viado) ");
+        discricao.add(54,"Falta de apetite. Fastio.");
         
-        discricao.add(55,"Coisa trabalhosa, complicada, embrulhada, intrincada.");
-        discricao.add(56,"terra");
-        discricao.add(57,"xadrez");
-        discricao.add(58,"chuva");
-        discricao.add(59,"muleque");
-        discricao.add(60,"homem");
+        discricao.add(55,"Ato reprovável, indignidade.");
+        discricao.add(56,"Arrebatar. Partir pra cima.(Frechar em Frúita - Fruta. Pederasta.");
+        discricao.add(57,"Sem cor, desbotado.");
+        discricao.add(58,"Fofoca, mexerico.");
+        discricao.add(59,"Barulho, confusão, conflito.");
+        discricao.add(60,"Flor");
     }
     public void sorteio(int qtd, ArrayList list)
     {
