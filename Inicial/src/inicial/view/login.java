@@ -12,7 +12,7 @@ package inicial.view;
 public class login extends javax.swing.JFrame {
 
     /**
-     * Creates new form login
+     * Creates new form loginç,lkomkomko
      */
     public login() {
         initComponents();
@@ -43,16 +43,16 @@ public class login extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(159, 159, 159)
+                .addGap(104, 104, 104)
                 .addComponent(jButton2)
-                .addContainerGap(166, Short.MAX_VALUE))
+                .addContainerGap(221, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(147, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(74, 74, 74)
                 .addComponent(jButton2)
-                .addGap(130, 130, 130))
+                .addContainerGap(203, Short.MAX_VALUE))
         );
 
         pack();
