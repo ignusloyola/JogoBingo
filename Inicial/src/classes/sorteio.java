@@ -18,29 +18,29 @@ public class sorteio {
     
     public void CarregarPalavras()
     {
-        dicionario.add(1,"Coisa trabalhosa, complicada, embrulhada, intrincada.");
-        dicionario.add(2,"terra");
-        dicionario.add(3,"xadrez");
-        dicionario.add(4,"chuva");
-        dicionario.add(5,"muleque");
-        dicionario.add(6,"homem");
+        dicionario.add(1,"Abacaxi");
+        dicionario.add(2,"Amoitado");
+        dicionario.add(3,"Amuado");
+        dicionario.add(4,"Angu");
+        dicionario.add(5,"Apartar");
+        dicionario.add(6,"Aquetar");
         
-        dicionario.add(7,"Coisa trabalhosa, complicada, embrulhada, intrincada.");
-        dicionario.add(8,"terra");
-        dicionario.add(9,"xadrez");
-        dicionario.add(10,"chuva");
-        dicionario.add(11,"muleque");
-        dicionario.add(12,"homem");
+        dicionario.add(7,"Ariado");
+        dicionario.add(8,"Arranca-rabo");
+        dicionario.add(9,"Arremedar");
+        dicionario.add(10,"Arretado");
+        dicionario.add(11,"Baleado");
+        dicionario.add(12,"Beca");
         
-        dicionario.add(13,"Coisa trabalhosa, complicada, embrulhada, intrincada.");
-        dicionario.add(14,"terra");
-        dicionario.add(15,"xadrez");
-        dicionario.add(16,"chuva");
-        dicionario.add(17,"muleque");
-        dicionario.add(18,"homem");
+        dicionario.add(13,"Bicada");
+        dicionario.add(14,"Bicudo");
+        dicionario.add(15,"Bisaco");
+        dicionario.add(16,"Bizu");
+        dicionario.add(17,"Boa pinta");
+        dicionario.add(18,"Boca de siri");
         
-        dicionario.add(19,"Coisa trabalhosa, complicada, embrulhada, intrincada.");
-        dicionario.add(20,"terra");
+        dicionario.add(19,"Botar banca");
+        dicionario.add(20,"Brigalhada");
         dicionario.add(21,"xadrez");
         dicionario.add(22,"chuva");
         dicionario.add(23,"muleque");
@@ -91,28 +91,28 @@ public class sorteio {
     public void CarregarDescricao()
     {
         discricao.add(1,"Coisa trabalhosa, complicada, embrulhada, intrincada.");
-        discricao.add(2,"terra");
-        discricao.add(3,"xadrez");
-        discricao.add(4,"chuva");
-        discricao.add(5,"muleque");
-        discricao.add(6,"homem");
+        discricao.add(2,"Agachado. Escondido.");
+        discricao.add(3,"Mal humorado.");
+        discricao.add(4,"Papa grossa de farinha de milho.");
+        discricao.add(5,"Separar. (Apartar uma briga).");
+        discricao.add(6,"Acalmar.");
         
-        discricao.add(7,"Coisa trabalhosa, complicada, embrulhada, intrincada.");
-        discricao.add(8,"terra");
-        discricao.add(9,"xadrez");
-        discricao.add(10,"chuva");
-        discricao.add(11,"muleque");
-        discricao.add(12,"homem");
+        discricao.add(7,"Perdido, distraído, desnorteado.");
+        discricao.add(8,"Confusão, briga.");
+        discricao.add(9,"Imitar. (Remedar)");
+        discricao.add(10,"Muito bom, excelente, maravilhoso. (ex: Êta dicionário arretado).");
+        discricao.add(11,"Em mau estado. Danificado. De ressaca. Adoentado.");
+        discricao.add(12,"Roupa elegante. Roupa nova.");
         
-        discricao.add(13,"Coisa trabalhosa, complicada, embrulhada, intrincada.");
-        discricao.add(14,"terra");
-        discricao.add(15,"xadrez");
-        discricao.add(16,"chuva");
-        discricao.add(17,"muleque");
-        discricao.add(18,"homem");
+        discricao.add(13,"Dose de cachaça.");
+        discricao.add(14," Chute com a ponta do pé.");
+        discricao.add(15,"Mochila.");
+        discricao.add(16,"Dica, informação valiosa.");
+        discricao.add(17,"Pessoa de bom aspecto.");
+        discricao.add(18,"Calado. Na moita.");
         
-        discricao.add(19,"Coisa trabalhosa, complicada, embrulhada, intrincada.");
-        discricao.add(20,"terra");
+        discricao.add(19,"Veado");
+        discricao.add(20,"Criar dificuldades. Vangloriar-se.");
         discricao.add(21,"xadrez");
         discricao.add(22,"chuva");
         discricao.add(23,"muleque");
@@ -163,6 +163,7 @@ public class sorteio {
     public void sorteio(int qtd, ArrayList list)
     {
         CarregarPalavras();
+        CarregarDescricao();
         
         boolean y=true;
 				
@@ -180,9 +181,26 @@ public class sorteio {
 				y=false;
 			}
 		}
+                 boolean z=true;
+				
+		while(z){
+			
+			if(discricao.size()!=5){
+				
+			int num = (int) (Math.random()*discricao.size());
+			System.out.println(discricao.get(num));
+                        list.add(num);
+			discricao.remove(num);
+			
+			}
+			else{
+				z=false;
+			}
+		}
     }
     
     
+            
     
     
     
