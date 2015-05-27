@@ -47,7 +47,7 @@ public class sorteio1 {
         dicionario.add(24,"homem");
         
         dicionario.add(25,"Coisa trabalhosa, complicada, embrulhada, intrincada.");
-        dicionario.add(26,"terra");
+        dicionario.add(26,"pedra");
         dicionario.add(27,"xadrez");
         dicionario.add(28,"chuva");
         dicionario.add(29,"muleque");
