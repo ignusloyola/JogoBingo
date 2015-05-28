@@ -30,8 +30,10 @@ public class TelaBonus extends javax.swing.JFrame {
         uJPanelImagem1 = new componentes.UJPanelImagem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setEnabled(false);
+        setFocusableWindowState(false);
 
-        uJPanelImagem1.setImagem(new java.io.File("E:\\Projeto Moises\\JogoBingo\\TelaBonus.png"));
+        uJPanelImagem1.setImagem(new java.io.File("D:\\Projeto Moises\\JogoBingo\\TelaBonus.png"));
 
         javax.swing.GroupLayout uJPanelImagem1Layout = new javax.swing.GroupLayout(uJPanelImagem1);
         uJPanelImagem1.setLayout(uJPanelImagem1Layout);

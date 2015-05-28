@@ -91,7 +91,22 @@ public class sorteio {
         dicionario.add(58,"Fuxico");
         dicionario.add(59,"Fuzuê");
         dicionario.add(60,"Fulô");
-
+        dicionario.add(61,"A MIGUÉ");
+        dicionario.add(62,"APULSO");
+        dicionario.add(63,"ABESTADO");
+        dicionario.add(64,"ABESTALHADO");
+        dicionario.add(65,"ABILOLADO");
+        dicionario.add(66,"ABIROBADO");
+        dicionario.add(67,"ABISCOITADO");
+        dicionario.add(68,"ABUFELAR");
+        dicionario.add(69,"ABULETADO");
+        dicionario.add(70,"ABUTICADO");
+        dicionario.add(71,"ACOITE");
+        dicionario.add(72,"ACUNHAR");
+        dicionario.add(73,"ADULAR");
+        dicionario.add(74,"AFEIÇOADO");
+        dicionario.add(75,"AFOLOZADO");
+      
     }
     public void CarregarDescricao()
     {
@@ -164,6 +179,24 @@ public class sorteio {
         discricao.add(58,"Fofoca, mexerico.");
         discricao.add(59,"Barulho, confusão, conflito.");
         discricao.add(60,"Flor");
+        discricao.add(61,"À toa, relaxado, largado, sem interesse.");
+        discricao.add(62,"À força. Contra a vontade");
+        discricao.add(63,"Otário. Tolo");
+        discricao.add(64,"Otário. Tolo");
+        discricao.add(65,"Doido");
+        discricao.add(66,"Maluco");
+        discricao.add(67,"Maluco, desorientado.");
+        discricao.add(68,"Agarrar pela gola, agredir.");
+        discricao.add(69,"Pessoa que ocupou um espaço tomou conta do pedaço (fulano aboletou-se na casa de sicrana e não sai mais);");
+        discricao.add(70,"Pessoa espantada, com os olhos vidrados (abuticados).");
+        discricao.add(71,"Chicote.");
+        discricao.add(72,"Chegar junto.");
+        discricao.add(73,"Agradar, bajular. Fazer a vontade de alguém");
+        discricao.add(74,"Pessoa bem aparentada (bonita, arrumada)");
+        discricao.add(75,"Folgado, arrombado.");
+
+        
+        
     }
     public void sorteio(int qtd, ArrayList listDic, ArrayList listDesc, JLabel lbldic, JLabel lbldesc)
     {

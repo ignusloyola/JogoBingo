@@ -31,7 +31,7 @@ public class TelaInicial extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        uJPanelImagem1.setImagem(new java.io.File("E:\\Projeto Moises\\JogoBingo\\TelaInicial.png"));
+        uJPanelImagem1.setImagem(new java.io.File("D:\\Projeto Moises\\JogoBingo\\TelaInicial.png"));
 
         javax.swing.GroupLayout uJPanelImagem1Layout = new javax.swing.GroupLayout(uJPanelImagem1);
         uJPanelImagem1.setLayout(uJPanelImagem1Layout);

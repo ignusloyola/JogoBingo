@@ -30,10 +30,13 @@ public class TelaCreditos extends javax.swing.JFrame {
         uJPanelImagem1 = new componentes.UJPanelImagem();
 
         setAutoRequestFocus(false);
+        setBounds(new java.awt.Rectangle(0, 0, 0, 0));
+        setMaximumSize(new java.awt.Dimension(400, 300));
         setModalExclusionType(null);
         setName("TelaCreditos"); // NOI18N
+        setType(java.awt.Window.Type.POPUP);
 
-        uJPanelImagem1.setImagem(new java.io.File("E:\\Projeto Moises\\JogoBingo\\TelaCreditos.png"));
+        uJPanelImagem1.setImagem(new java.io.File("D:\\Projeto Moises\\JogoBingo\\TelaCreditos.png"));
 
         javax.swing.GroupLayout uJPanelImagem1Layout = new javax.swing.GroupLayout(uJPanelImagem1);
         uJPanelImagem1.setLayout(uJPanelImagem1Layout);
