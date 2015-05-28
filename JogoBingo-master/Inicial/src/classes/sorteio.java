@@ -14,6 +14,8 @@ import javax.swing.JLabel;
  */
 public class sorteio {
     
+    //criação dos arraylist s
+    
     ArrayList<String> dicionario = new ArrayList<String>();
     ArrayList<String> discricao = new ArrayList<String>();
     
@@ -169,19 +171,16 @@ public class sorteio {
         CarregarDescricao();
         int num = 0;
         int num1 = 0;
-        boolean y=true;
-				
+        boolean y=true;		
 		while(y){
-			
 			if(dicionario.size()!=qtd){
-				
+			//SAMI	
                         num = num1 = (int) (Math.random()*dicionario.size());
 			//System.out.println(dicionario.get(num));
                         list.add(num);
                         list1.add(num1);
 			dicionario.remove(num);
                         dicionario.remove(num1);
-		
 			}
 			else{
 				y=false;
