@@ -165,7 +165,7 @@ public class sorteio {
         discricao.add(59,"Barulho, confusão, conflito.");
         discricao.add(60,"Flor");
     }
-    public void sorteio(int qtd, ArrayList list, ArrayList list1, JLabel lbldic, JLabel lbldesc)
+    public void sorteio(int qtd, ArrayList listDic, ArrayList listDesc, JLabel lbldic, JLabel lbldesc)
     {
         CarregarPalavras();
         CarregarDescricao();
@@ -177,10 +177,10 @@ public class sorteio {
 			//SAMI	
                         num = num1 = (int) (Math.random()*dicionario.size());
 			//System.out.println(dicionario.get(num));
-                        list.add(num);
-                        list1.add(num1);
+                        listDic.add(num);
+                        listDesc.add(num1);
 			dicionario.remove(num);
-                        dicionario.remove(num1);
+                        discricao.remove(num1);
 			}
 			else{
 				y=false;
