@@ -18,6 +18,7 @@ public class sorteio {
     
     public void CarregarPalavras()
     {
+  
         dicionario.add(1,"Abacaxi");
         dicionario.add(2,"Amoitado");
         dicionario.add(3,"Amuado");
@@ -41,52 +42,53 @@ public class sorteio {
         
         dicionario.add(19,"Botar banca");
         dicionario.add(20,"Brigalhada");
-        dicionario.add(21,"xadrez");
-        dicionario.add(22,"chuva");
-        dicionario.add(23,"muleque");
-        dicionario.add(24,"homem");
+        dicionario.add(21,"Cabra(caba)");
+        dicionario.add(22,"Cabreiro");
+        dicionario.add(23,"Caçoar");
+        dicionario.add(24,"Chibata");
         
-        dicionario.add(25,"Coisa trabalhosa, complicada, embrulhada, intrincada.");
-        dicionario.add(26,"terra");
-        dicionario.add(27,"xadrez");
-        dicionario.add(28,"chuva");
-        dicionario.add(29,"muleque");
-        dicionario.add(30,"homem");
+        dicionario.add(25,"Chumbado");
+        dicionario.add(26,"Chutado");
+        dicionario.add(27,"Chuvisco");
+        dicionario.add(28,"Cipuada");
+        dicionario.add(29,"Coca");
+        dicionario.add(30,"Coiteiro");
         
-        dicionario.add(31,"Coisa trabalhosa, complicada, embrulhada, intrincada.");
-        dicionario.add(32,"terra");
-        dicionario.add(33,"xadrez");
-        dicionario.add(34,"chuva");
-        dicionario.add(35,"muleque");
-        dicionario.add(36,"homem");
+        dicionario.add(31,"Dada(ou dado) ");
+        dicionario.add(32,"Da molesta");
+        dicionario.add(33,"Dar maçada");
+        dicionario.add(34,"Dedada");
+        dicionario.add(35,"De lua");
+        dicionario.add(36,"Descambimbado");
         
-        dicionario.add(37,"Coisa trabalhosa, complicada, embrulhada, intrincada.");
-        dicionario.add(38,"terra");
-        dicionario.add(39,"xadrez");
-        dicionario.add(40,"chuva");
-        dicionario.add(41,"muleque");
-        dicionario.add(42,"homem");
+        dicionario.add(37,"Destiorado");
+        dicionario.add(38,"Destrocar");
+        dicionario.add(39,"Desunerado");
+        dicionario.add(40,"Disgrama");
+        dicionario.add(41,"Embrabecer");
+        dicionario.add(42,"Embromar");
         
-        dicionario.add(43,"Coisa trabalhosa, complicada, embrulhada, intrincada.");
-        dicionario.add(44,"terra");
-        dicionario.add(45,"xadrez");
-        dicionario.add(46,"chuva");
-        dicionario.add(47,"muleque");
-        dicionario.add(48,"homem");
+        dicionario.add(43,"Embuchar");
+        dicionario.add(44,"Emburrado");
+        dicionario.add(45,"Empapado");
+        dicionario.add(46,"Emperebado");
+        dicionario.add(47,"Empombar");
+        dicionario.add(48,"Emprenhar");
         
-        dicionario.add(49,"Coisa trabalhosa, complicada, embrulhada, intrincada.");
-        dicionario.add(50,"terra");
-        dicionario.add(51,"xadrez");
-        dicionario.add(52,"chuva");
-        dicionario.add(53,"muleque");
-        dicionario.add(54,"homem");
+        dicionario.add(49,"Encafifado");
+        dicionario.add(50,"Encalhada");
+        dicionario.add(51,"Fajuto");
+        dicionario.add(52,"Famía");
+        dicionario.add(53,"Faniquito");
+        dicionario.add(54,"Fasti ");
         
-        dicionario.add(55,"Coisa trabalhosa, complicada, embrulhada, intrincada.");
-        dicionario.add(56,"terra");
-        dicionario.add(57,"xadrez");
-        dicionario.add(58,"chuva");
-        dicionario.add(59,"muleque");
-        dicionario.add(60,"homem");
+        dicionario.add(55,"Feiúra");
+        dicionario.add(56,"Frechar(flechar)");
+        dicionario.add(57,"Fubento");
+        dicionario.add(58,"Fuxico");
+        dicionario.add(59,"Fuzuê");
+        dicionario.add(60,"Fulô");
+
     }
     public void CarregarDescricao()
     {
@@ -158,45 +160,31 @@ public class sorteio {
         discricao.add(57,"Sem cor, desbotado.");
         discricao.add(58,"Fofoca, mexerico.");
         discricao.add(59,"Barulho, confusão, conflito.");
-        discricao.add(60,"Flor");//scdfsdfh
+        discricao.add(60,"Flor");
     }
     public void sorteio(int qtd, ArrayList list)
     {
         CarregarPalavras();
         CarregarDescricao();
-        
+        int num=0;
+        int num1=0;
         boolean y=true;
 				
 		while(y){
 			
 			if(dicionario.size()!=5){
 				
-			int num = (int) (Math.random()*dicionario.size());
-			System.out.println(dicionario.get(num));
+                        num = (int) (Math.random()*dicionario.size());
+			//System.out.println(dicionario.get(num));
                         list.add(num);
 			dicionario.remove(num);
-			
+		
 			}
 			else{
 				y=false;
 			}
 		}
-                 boolean z=true;
-				
-		while(z){
-			
-			if(discricao.size()!=5){
-				
-			int num = (int) (Math.random()*discricao.size());
-			System.out.println(discricao.get(num));
-                        list.add(num);
-			discricao.remove(num);
-			
-			}
-			else{
-				z=false;
-			}
-		}
+                 
     }
     
     
