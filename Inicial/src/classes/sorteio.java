@@ -158,7 +158,7 @@ public class sorteio {
         discricao.add(57,"Sem cor, desbotado.");
         discricao.add(58,"Fofoca, mexerico.");
         discricao.add(59,"Barulho, confusão, conflito.");
-        discricao.add(60,"Flor");
+        discricao.add(60,"Flor");//scdfsdfh
     }
     public void sorteio(int qtd, ArrayList list)
     {
