@@ -6,6 +6,7 @@
 package classes;
 
 import java.util.ArrayList;
+import javax.swing.JLabel;
 
 /**
  *
@@ -162,22 +163,24 @@ public class sorteio {
         discricao.add(59,"Barulho, confusão, conflito.");
         discricao.add(60,"Flor");
     }
-    public void sorteio(int qtd, ArrayList list)
+    public void sorteio(int qtd, ArrayList list, ArrayList list1, JLabel lbldic, JLabel lbldesc)
     {
         CarregarPalavras();
         CarregarDescricao();
-        int num=0;
-        int num1=0;
+        int num = 0;
+        int num1 = 0;
         boolean y=true;
 				
 		while(y){
 			
-			if(dicionario.size()!=5){
+			if(dicionario.size()!=qtd){
 				
-                        num = (int) (Math.random()*dicionario.size());
+                        num = num1 = (int) (Math.random()*dicionario.size());
 			//System.out.println(dicionario.get(num));
                         list.add(num);
+                        list1.add(num1);
 			dicionario.remove(num);
+                        dicionario.remove(num1);
 		
 			}
 			else{
