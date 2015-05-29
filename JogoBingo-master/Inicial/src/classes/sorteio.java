@@ -106,6 +106,7 @@ public class sorteio {
         dicionario.add(73,"ADULAR");
         dicionario.add(74,"AFEIÇOADO");
         dicionario.add(75,"AFOLOZADO");
+        dicionario.add(76,"AFOLOZADO");//inserido para teste
       
     }
     public void CarregarDescricao()
