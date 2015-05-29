@@ -110,6 +110,7 @@ public class sorteio {
     }
     public void CarregarDescricao()
     {
+        discricao.add(0,"Nada");
         discricao.add(1,"Coisa trabalhosa, complicada, embrulhada, intrincada.");
         discricao.add(2,"Agachado. Escondido.");
         discricao.add(3,"Mal humorado.");
