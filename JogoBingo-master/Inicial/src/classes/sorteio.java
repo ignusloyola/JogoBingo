@@ -21,7 +21,7 @@ public class sorteio {
     
     public void CarregarPalavras()
     {
-  
+        dicionario.add(0,"Zero");
         dicionario.add(1,"Abacaxi");
         dicionario.add(2,"Amoitado");
         dicionario.add(3,"Amuado");
