@@ -39,7 +39,7 @@ public class TelaInicial extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        uJPanelImagem1.setImagem(new java.io.File("C:\\Users\\Alexandre\\Documents\\TelaInicial.png"));
+        uJPanelImagem1.setImagem(new java.io.File("C:\\Users\\inacio\\Documents\\NetBeansProjects\\JogoBingo\\JogoBingo\\JogoBingo-master\\Inicial\\src\\inicial\\view\\imag\\TelaInicial.png"));
 
         btnJogar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -64,16 +64,18 @@ public class TelaInicial extends javax.swing.JFrame {
         uJPanelImagem1Layout.setHorizontalGroup(
             uJPanelImagem1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(uJPanelImagem1Layout.createSequentialGroup()
-                .addContainerGap(352, Short.MAX_VALUE)
+                .addContainerGap(354, Short.MAX_VALUE)
                 .addGroup(uJPanelImagem1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, uJPanelImagem1Layout.createSequentialGroup()
-                        .addGap(0, 29, Short.MAX_VALUE)
+                        .addGap(0, 31, Short.MAX_VALUE)
                         .addComponent(btnSair, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(377, 377, 377))
                     .addGroup(uJPanelImagem1Layout.createSequentialGroup()
                         .addGroup(uJPanelImagem1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(btnCreditos, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnJogar, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(uJPanelImagem1Layout.createSequentialGroup()
+                                .addGap(9, 9, 9)
+                                .addComponent(btnJogar, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
         uJPanelImagem1Layout.setVerticalGroup(
