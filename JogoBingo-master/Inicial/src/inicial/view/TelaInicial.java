@@ -21,6 +21,7 @@ public class TelaInicial extends javax.swing.JFrame {
         btnJogar.setBackground(new Color(0,0,0,0) );
         btnCreditos.setBackground(new Color(0,0,0,0) );
         btnSair.setBackground(new Color(0,0,0,0) );
+        uJPanelImagem1.setImagem(new java.io.File("src/inicial/view/TelaInicial.png"));
         //atualizacao de codigo
     }
 
@@ -40,7 +41,7 @@ public class TelaInicial extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        uJPanelImagem1.setImagem(new java.io.File("C:\\Users\\inacio\\Documents\\NetBeansProjects\\JogoBingo\\JogoBingo\\JogoBingo-master\\Inicial\\src\\inicial\\view\\imag\\TelaInicial.png"));
+        uJPanelImagem1.setImagem(new java.io.File("C:\\Users\\Alexandre\\Documents\\NetBeansProjects\\JogoBingo\\JogoBingo\\TelaInicial.png"));
 
         btnJogar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
