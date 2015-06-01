@@ -21,6 +21,7 @@ public class TelaInicial extends javax.swing.JFrame {
         btnJogar.setBackground(new Color(0,0,0,0) );
         btnCreditos.setBackground(new Color(0,0,0,0) );
         btnSair.setBackground(new Color(0,0,0,0) );
+        //atualizacao de codigo
     }
 
     /**
