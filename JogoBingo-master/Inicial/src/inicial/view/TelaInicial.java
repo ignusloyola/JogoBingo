@@ -41,8 +41,6 @@ public class TelaInicial extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        uJPanelImagem1.setImagem(new java.io.File("C:\\Users\\Alexandre\\Documents\\NetBeansProjects\\JogoBingo\\JogoBingo\\TelaInicial.png"));
-
         btnJogar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnJogarActionPerformed(evt);
