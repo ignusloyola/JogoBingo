@@ -6,6 +6,8 @@
 package inicial.view;
 
 import classes.level1;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 import java.util.ArrayList;
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -30,7 +32,25 @@ public class Principal extends javax.swing.JFrame {
         desabilitarBtn();
         
     }
-    
+
+    private void btnvoltarActionPerformed(java.awt.event.ActionEvent evt) {                                          
+        // TODO add your handling code here:
+        TelaInicial Tela = new TelaInicial();
+        Tela.show();
+        TelaCreditos TelaC = new TelaCreditos();
+        //System.exit(8);//fecha tudoDISPOSE_ON_EXIT
+    }  
+        
+    public  void botaoX (){  
+           addWindowListener (new WindowAdapter () {  
+                  public void windowClosing (WindowEvent e) {  
+                         //caixa de dialogo retorna um inteiro  
+                         setVisible (false); // sai da tela em que esta  
+                        // TelaInicial.getInstance ().setVisible (true); //vai para a tela que você quiser...  
+                  }
+           }
+    }
+        
     public void desabilitarBtn()
     {
         jButton1.setVisible(false);
@@ -189,7 +209,7 @@ public class Principal extends javax.swing.JFrame {
         jLabel14 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(51, 102, 255));
 
