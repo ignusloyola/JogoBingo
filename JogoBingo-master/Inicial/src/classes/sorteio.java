@@ -6,6 +6,7 @@
 package classes;
 
 import java.util.ArrayList;
+import javax.swing.JButton;
 import javax.swing.JLabel;
 
 /**
@@ -28,63 +29,54 @@ public class sorteio {
         dicionario.add(4,"Angu");
         dicionario.add(5,"Apartar");
         dicionario.add(6,"Aquetar");
-        
         dicionario.add(7,"Ariado");
         dicionario.add(8,"Arranca-rabo");
         dicionario.add(9,"Arremedar");
         dicionario.add(10,"Arretado");
         dicionario.add(11,"Baleado");
         dicionario.add(12,"Beca");
-        
         dicionario.add(13,"Bicada");
         dicionario.add(14,"Bicudo");
         dicionario.add(15,"Bisaco");
         dicionario.add(16,"Bizu");
         dicionario.add(17,"Boa pinta");
         dicionario.add(18,"Boca de siri");
-        
         dicionario.add(19,"Botar banca");
         dicionario.add(20,"Brigalhada");
         dicionario.add(21,"Cabra(caba)");
         dicionario.add(22,"Cabreiro");
         dicionario.add(23,"Caçoar");
         dicionario.add(24,"Chibata");
-        
         dicionario.add(25,"Chumbado");
         dicionario.add(26,"Chutado");
         dicionario.add(27,"Chuvisco");
         dicionario.add(28,"Cipuada");
         dicionario.add(29,"Coca");
         dicionario.add(30,"Coiteiro");
-        
         dicionario.add(31,"Dada(ou dado) ");
         dicionario.add(32,"Da molesta");
         dicionario.add(33,"Dar maçada");
         dicionario.add(34,"Dedada");
         dicionario.add(35,"De lua");
         dicionario.add(36,"Descambimbado");
-        
         dicionario.add(37,"Destiorado");
         dicionario.add(38,"Destrocar");
         dicionario.add(39,"Desunerado");
         dicionario.add(40,"Disgrama");
         dicionario.add(41,"Embrabecer");
         dicionario.add(42,"Embromar");
-        
         dicionario.add(43,"Embuchar");
         dicionario.add(44,"Emburrado");
         dicionario.add(45,"Empapado");
         dicionario.add(46,"Emperebado");
         dicionario.add(47,"Empombar");
         dicionario.add(48,"Emprenhar");
-        
         dicionario.add(49,"Encafifado");
         dicionario.add(50,"Encalhada");
         dicionario.add(51,"Fajuto");
         dicionario.add(52,"Famía");
         dicionario.add(53,"Faniquito");
         dicionario.add(54,"Fasti ");
-        
         dicionario.add(55,"Feiúra");
         dicionario.add(56,"Frechar(flechar)");
         dicionario.add(57,"Fubento");
@@ -106,11 +98,8 @@ public class sorteio {
         dicionario.add(73,"ADULAR");
         dicionario.add(74,"AFEIÇOADO");
         dicionario.add(75,"AFOLOZADO");
-        dicionario.add(76,"AFOLOZADO");//inserido para teste
-        dicionario.add(77,"AFOLOZADO");//inserido para teste
-      
     }
-    public void CarregarDescricao()
+        public void CarregarDescricao()
     {
         discricao.add(0,"Nada");
         discricao.add(1,"Coisa trabalhosa, complicada, embrulhada, intrincada.");
@@ -201,20 +190,24 @@ public class sorteio {
         
         
     }
-    public void sorteio(int qtd, ArrayList listDic, ArrayList listDesc, JLabel lbldic, JLabel lbldesc)
+    public void sorteio( JLabel lbldic, JLabel lbldesc)
     {
+        //int qtd, ArrayList listDic, ArrayList listDesc,
         CarregarPalavras();
         CarregarDescricao();
         int num = 0;
         int num1 = 0;
+        for(int b=0; b<=50;b++){
         boolean y=true;		
 		while(y){
-			if(dicionario.size()!=qtd){
+			if(dicionario.size()!=5){
 			//SAMI	
                         num = num1 = (int) (Math.random()*dicionario.size());
 			//System.out.println(dicionario.get(num));
-                        listDic.add(num);
-                        listDesc.add(num1);
+                       // listDic.add(num);
+                        //listDesc.add(num1);
+                        lbldic.setText(dicionario.get(num));
+                        lbldesc.setText(discricao.get(num1));
 			dicionario.remove(num);
                         discricao.remove(num1);
 			}
@@ -222,8 +215,33 @@ public class sorteio {
 				y=false;
 			}
 		}
-                 
+        }
     }
+    public void sorteio2(JLabel jlbl){
+        CarregarPalavras();
+        int num = 0;
+        for(int b=0; b<=75;b++){
+        boolean y=true;		
+		while(y){
+			if(dicionario.size()!=12){
+			//SAMI	
+                        num = (int) (Math.random()*dicionario.size());
+			//System.out.println(dicionario.get(num));
+                       // listDic.add(num);
+                        //listDesc.add(num1);
+                        jlbl.setText(dicionario.get(num));
+                	dicionario.remove(num);
+                        break;
+			}
+			else{
+				y=false;
+			}
+		}
+        }
+        
+        
+    }
+    
     
      
 }
