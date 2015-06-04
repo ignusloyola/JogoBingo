@@ -90,6 +90,7 @@ public class TelaCreditos extends javax.swing.JFrame {
         TelaInicial Tela = new TelaInicial();
         Tela.show();
         TelaCreditos TelaC = new TelaCreditos();
+        TelaC.hide();
        
        
         //System.exit(8);//fecha tudoDISPOSE_ON_EXIT

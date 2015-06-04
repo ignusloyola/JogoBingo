@@ -116,6 +116,7 @@ public class TelaInicial extends javax.swing.JFrame {
       TelaCreditos tela=new TelaCreditos();
       tela.show();
       
+   
         // TODO add your handling code here:
     }//GEN-LAST:event_btnCreditosActionPerformed
 
