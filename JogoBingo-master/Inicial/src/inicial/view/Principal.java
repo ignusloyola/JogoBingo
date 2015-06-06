@@ -15,7 +15,8 @@ import classes.sorteio;
 public class Principal extends javax.swing.JFrame {
     
     level1 level = new level1();
-    
+    sorteio sorte = new sorteio();
+    int fase=0;
    
     
     /**
@@ -35,16 +36,16 @@ public class Principal extends javax.swing.JFrame {
     
     public void desabilitarBtn()
     {
-        btn.setVisible(false);
-        jButton2.setVisible(false);
-        jButton3.setVisible(false);
-        jButton4.setVisible(false);
-        jButton5.setVisible(false);
-        jButton6.setVisible(false);
-        jButton7.setVisible(false);
-        jButton8.setVisible(false);
-        jButton9.setVisible(false);
-        jButton10.setVisible(false);
+        btn1.setVisible(false);
+        btn2.setVisible(false);
+        btn3.setVisible(false);
+        btn4.setVisible(false);
+        btn5.setVisible(false);
+        btn6.setVisible(false);
+        btn7.setVisible(false);
+        btn8.setVisible(false);
+        btn9.setVisible(false);
+        btn10.setVisible(false);
         jButton11.setVisible(false);
         jButton12.setVisible(false);
         jButton13.setVisible(false);
@@ -99,6 +100,61 @@ public class Principal extends javax.swing.JFrame {
         
     }
     
+    public void level1()
+    {//
+        switch(fase){
+            case 1:
+                btnInicio.setVisible(false);
+                level.imgCoracaoGanha(img1);
+                level.imgCoracaoGanha(img2);
+                level.imgCoracaoGanha(img3);
+                habilitarBtnlevel1();
+                sorte.selecaoPalavras(btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9, btn10);
+                lblLevel.setText("Level 1");
+                
+            break;
+           
+        }
+    }
+    
+    public void habilitarBtnlevel1()
+    {
+        btn1.setVisible(true);
+        btn2.setVisible(true);
+        btn3.setVisible(true);
+        btn4.setVisible(true);
+        btn5.setVisible(true);
+        btn6.setVisible(true);
+        btn7.setVisible(true);
+        btn8.setVisible(true);
+        btn9.setVisible(true);
+        btn10.setVisible(true);
+       
+    }
+    
+ 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -111,29 +167,29 @@ public class Principal extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         lblRelogioGif = new javax.swing.JLabel();
         lblPalavra = new javax.swing.JLabel();
-        jButton61 = new javax.swing.JButton();
+        btnInicio = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
         jButton62 = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         lblDescricao = new javax.swing.JLabel();
         uJPanelImagem2 = new componentes.UJPanelImagem();
-        label1 = new java.awt.Label();
+        lblLevel = new java.awt.Label();
         jPanel3 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
+        img1 = new javax.swing.JLabel();
+        img2 = new javax.swing.JLabel();
+        img3 = new javax.swing.JLabel();
         jPanel5 = new javax.swing.JPanel();
-        btn = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
-        jButton9 = new javax.swing.JButton();
-        jButton10 = new javax.swing.JButton();
+        btn1 = new javax.swing.JButton();
+        btn2 = new javax.swing.JButton();
+        btn3 = new javax.swing.JButton();
+        btn4 = new javax.swing.JButton();
+        btn5 = new javax.swing.JButton();
+        btn6 = new javax.swing.JButton();
+        btn7 = new javax.swing.JButton();
+        btn8 = new javax.swing.JButton();
+        btn9 = new javax.swing.JButton();
+        btn10 = new javax.swing.JButton();
         jButton11 = new javax.swing.JButton();
         jButton12 = new javax.swing.JButton();
         jButton13 = new javax.swing.JButton();
@@ -195,7 +251,7 @@ public class Principal extends javax.swing.JFrame {
         jLabel14 = new javax.swing.JLabel();
         jlbl = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setAlwaysOnTop(true);
 
         jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -207,10 +263,10 @@ public class Principal extends javax.swing.JFrame {
         lblPalavra.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblPalavra.setText("PALAVRA SORTEADA");
 
-        jButton61.setText("Inicio do jogo");
-        jButton61.addActionListener(new java.awt.event.ActionListener() {
+        btnInicio.setText("Inicio do jogo");
+        btnInicio.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton61ActionPerformed(evt);
+                btnInicioActionPerformed(evt);
             }
         });
 
@@ -235,9 +291,8 @@ public class Principal extends javax.swing.JFrame {
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                             .addComponent(jButton62, javax.swing.GroupLayout.DEFAULT_SIZE, 146, Short.MAX_VALUE)
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(jButton61, javax.swing.GroupLayout.DEFAULT_SIZE, 146, Short.MAX_VALUE)
-                                .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                            .addComponent(btnInicio, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 146, Short.MAX_VALUE)
+                            .addComponent(jButton1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(248, 248, 248)
                         .addComponent(lblRelogioGif, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
@@ -253,7 +308,7 @@ public class Principal extends javax.swing.JFrame {
                         .addComponent(lblRelogioGif, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(18, 18, 18)
-                        .addComponent(jButton61)
+                        .addComponent(btnInicio)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jButton1)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -270,7 +325,7 @@ public class Principal extends javax.swing.JFrame {
 
         uJPanelImagem2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        label1.setText("label1");
+        lblLevel.setText("label1");
 
         javax.swing.GroupLayout uJPanelImagem2Layout = new javax.swing.GroupLayout(uJPanelImagem2);
         uJPanelImagem2.setLayout(uJPanelImagem2Layout);
@@ -278,12 +333,12 @@ public class Principal extends javax.swing.JFrame {
             uJPanelImagem2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(uJPanelImagem2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(label1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(lblLevel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
         );
         uJPanelImagem2Layout.setVerticalGroup(
             uJPanelImagem2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(label1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(lblLevel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -312,46 +367,46 @@ public class Principal extends javax.swing.JFrame {
 
         jLabel1.setText("Chances");
 
-        jLabel2.setText("IMG1");
+        img1.setText("IMG1");
 
-        jLabel3.setText("IMG2");
+        img2.setText("IMG2");
 
-        jLabel4.setText("IMG3");
+        img3.setText("IMG3");
 
         jPanel5.setBackground(new java.awt.Color(0, 255, 102));
         jPanel5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        btn.setText("jButton1");
-        btn.setEnabled(false);
-        btn.setRequestFocusEnabled(false);
-        btn.setSelected(true);
+        btn1.setText("jButton1");
+        btn1.setEnabled(false);
+        btn1.setRequestFocusEnabled(false);
+        btn1.setSelected(true);
 
-        jButton2.setText("jButton2");
-        jButton2.setEnabled(false);
+        btn2.setText("jButton2");
+        btn2.setEnabled(false);
 
-        jButton3.setText("jButton3");
-        jButton3.setEnabled(false);
+        btn3.setText("jButton3");
+        btn3.setEnabled(false);
 
-        jButton4.setText("jButton4");
-        jButton4.setEnabled(false);
+        btn4.setText("jButton4");
+        btn4.setEnabled(false);
 
-        jButton5.setText("jButton5");
-        jButton5.setEnabled(false);
+        btn5.setText("jButton5");
+        btn5.setEnabled(false);
 
-        jButton6.setText("jButton6");
-        jButton6.setEnabled(false);
+        btn6.setText("jButton6");
+        btn6.setEnabled(false);
 
-        jButton7.setText("jButton7");
-        jButton7.setEnabled(false);
+        btn7.setText("jButton7");
+        btn7.setEnabled(false);
 
-        jButton8.setText("jButton8");
-        jButton8.setEnabled(false);
+        btn8.setText("jButton8");
+        btn8.setEnabled(false);
 
-        jButton9.setText("jButton9");
-        jButton9.setEnabled(false);
+        btn9.setText("jButton9");
+        btn9.setEnabled(false);
 
-        jButton10.setText("jButton10");
-        jButton10.setEnabled(false);
+        btn10.setText("jButton10");
+        btn10.setEnabled(false);
 
         jButton11.setText("jButton11");
         jButton11.setEnabled(false);
@@ -572,25 +627,25 @@ public class Principal extends javax.swing.JFrame {
                         .addComponent(jButton40))
                     .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                         .addGroup(jPanel5Layout.createSequentialGroup()
-                            .addComponent(btn)
+                            .addComponent(btn1)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(jButton2)
+                            .addComponent(btn2)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(jButton3)
+                            .addComponent(btn3)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(jButton4)
+                            .addComponent(btn4)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(jButton5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(btn5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel5Layout.createSequentialGroup()
-                            .addComponent(jButton6)
+                            .addComponent(btn6)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(jButton7)
+                            .addComponent(btn7)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(jButton8)
+                            .addComponent(btn8)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(jButton9)
+                            .addComponent(btn9)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(jButton10)))
+                            .addComponent(btn10)))
                     .addGroup(jPanel5Layout.createSequentialGroup()
                         .addComponent(jButton41)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -638,18 +693,18 @@ public class Principal extends javax.swing.JFrame {
             .addGroup(jPanel5Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btn)
-                    .addComponent(jButton2)
-                    .addComponent(jButton3)
-                    .addComponent(jButton4)
-                    .addComponent(jButton5))
+                    .addComponent(btn1)
+                    .addComponent(btn2)
+                    .addComponent(btn3)
+                    .addComponent(btn4)
+                    .addComponent(btn5))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton6)
-                    .addComponent(jButton7)
-                    .addComponent(jButton8)
-                    .addComponent(jButton9)
-                    .addComponent(jButton10))
+                    .addComponent(btn6)
+                    .addComponent(btn7)
+                    .addComponent(btn8)
+                    .addComponent(btn9)
+                    .addComponent(btn10))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton11)
@@ -732,11 +787,11 @@ public class Principal extends javax.swing.JFrame {
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addComponent(jLabel1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jLabel2)
+                        .addComponent(img1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jLabel3)
+                        .addComponent(img2)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jLabel4)
+                        .addComponent(img3)
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addContainerGap()
@@ -747,11 +802,11 @@ public class Principal extends javax.swing.JFrame {
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(img3, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(img1, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jLabel1))
-                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(img2, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(36, 36, 36))
@@ -857,12 +912,14 @@ public class Principal extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton61ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton61ActionPerformed
+    private void btnInicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInicioActionPerformed
         // TODO add your handling code here:
         sorteio s = new sorteio();
         s.sorteio(lblPalavra, lblDescricao);
+        fase=1;
+        level1();
         
-    }//GEN-LAST:event_jButton61ActionPerformed
+    }//GEN-LAST:event_btnInicioActionPerformed
 
     private void jButton62ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton62ActionPerformed
      // Fecha a Janela
@@ -906,9 +963,21 @@ public class Principal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btn;
+    private javax.swing.JButton btn1;
+    private javax.swing.JButton btn10;
+    private javax.swing.JButton btn2;
+    private javax.swing.JButton btn3;
+    private javax.swing.JButton btn4;
+    private javax.swing.JButton btn5;
+    private javax.swing.JButton btn6;
+    private javax.swing.JButton btn7;
+    private javax.swing.JButton btn8;
+    private javax.swing.JButton btn9;
+    private javax.swing.JButton btnInicio;
+    private javax.swing.JLabel img1;
+    private javax.swing.JLabel img2;
+    private javax.swing.JLabel img3;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton11;
     private javax.swing.JButton jButton12;
     private javax.swing.JButton jButton13;
@@ -918,7 +987,6 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JButton jButton17;
     private javax.swing.JButton jButton18;
     private javax.swing.JButton jButton19;
-    private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton20;
     private javax.swing.JButton jButton21;
     private javax.swing.JButton jButton22;
@@ -929,7 +997,6 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JButton jButton27;
     private javax.swing.JButton jButton28;
     private javax.swing.JButton jButton29;
-    private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton30;
     private javax.swing.JButton jButton31;
     private javax.swing.JButton jButton32;
@@ -940,7 +1007,6 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JButton jButton37;
     private javax.swing.JButton jButton38;
     private javax.swing.JButton jButton39;
-    private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton40;
     private javax.swing.JButton jButton41;
     private javax.swing.JButton jButton42;
@@ -951,7 +1017,6 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JButton jButton47;
     private javax.swing.JButton jButton48;
     private javax.swing.JButton jButton49;
-    private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton50;
     private javax.swing.JButton jButton51;
     private javax.swing.JButton jButton52;
@@ -962,22 +1027,14 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JButton jButton57;
     private javax.swing.JButton jButton58;
     private javax.swing.JButton jButton59;
-    private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton60;
-    private javax.swing.JButton jButton61;
     private javax.swing.JButton jButton62;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
-    private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
@@ -987,8 +1044,8 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JLabel jlbl;
-    private java.awt.Label label1;
     private javax.swing.JLabel lblDescricao;
+    private java.awt.Label lblLevel;
     private javax.swing.JLabel lblPalavra;
     private javax.swing.JLabel lblRelogioGif;
     private componentes.UJPanelImagem uJPanelImagem2;

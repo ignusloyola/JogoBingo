@@ -121,6 +121,7 @@ public class TelaInicial extends javax.swing.JFrame {
     private void btnJogarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJogarActionPerformed
             Principal tela=new Principal();
             tela.show();
+            this.hide();
             // TODO add your handling code here:
     }//GEN-LAST:event_btnJogarActionPerformed
 
