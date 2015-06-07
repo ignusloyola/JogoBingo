@@ -16,6 +16,7 @@ public class TelaBonus extends javax.swing.JFrame {
      */
     public TelaBonus() {
         initComponents();
+        setLocationRelativeTo(null);
     }
 
     /**
@@ -29,9 +30,11 @@ public class TelaBonus extends javax.swing.JFrame {
 
         uJPanelImagem1 = new componentes.UJPanelImagem();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setAlwaysOnTop(true);
         setEnabled(false);
-        setFocusableWindowState(false);
+        setFocusTraversalPolicyProvider(true);
+        setType(java.awt.Window.Type.POPUP);
 
         uJPanelImagem1.setImagem(new java.io.File("C:\\Users\\inacio\\Documents\\NetBeansProjects\\JogoBingo\\JogoBingo\\JogoBingo-master\\Inicial\\src\\inicial\\view\\imag\\TelaBonus.png"));
 
@@ -58,6 +61,7 @@ public class TelaBonus extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     /**

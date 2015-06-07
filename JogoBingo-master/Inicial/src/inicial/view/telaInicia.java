@@ -20,7 +20,7 @@ public class telaInicia extends javax.swing.JFrame {
      */
     public telaInicia() {
         initComponents();
-        
+        setLocationRelativeTo(null);
        
     }
     

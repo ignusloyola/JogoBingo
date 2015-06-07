@@ -19,8 +19,10 @@ public class TelaCreditos extends javax.swing.JFrame {
      */
     public TelaCreditos() {
         initComponents();
-        
         btnvoltar.setBackground(new Color(0,0,0,0) );
+        uJPanelImagem1.setImagem(new java.io.File("src/inicial/view/TelaCreditos.png"));
+        setLocationRelativeTo(null);
+ 
     }
 
     /**
@@ -35,14 +37,17 @@ public class TelaCreditos extends javax.swing.JFrame {
         uJPanelImagem1 = new componentes.UJPanelImagem();
         btnvoltar = new javax.swing.JButton();
 
-        setAutoRequestFocus(false);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setAlwaysOnTop(true);
         setBounds(new java.awt.Rectangle(0, 0, 0, 0));
+        setLocationByPlatform(true);
         setMaximumSize(new java.awt.Dimension(400, 300));
-        setModalExclusionType(null);
         setName("TelaCreditos"); // NOI18N
+        setUndecorated(true);
         setType(java.awt.Window.Type.POPUP);
 
-        uJPanelImagem1.setImagem(new java.io.File("C:\\Users\\inacio\\Documents\\NetBeansProjects\\JogoBingo\\JogoBingo\\JogoBingo-master\\Inicial\\src\\inicial\\view\\imag\\TelaCreditos.png"));
+        uJPanelImagem1.setBorder(javax.swing.BorderFactory.createCompoundBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true), javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED)));
+        uJPanelImagem1.setImagem(new java.io.File("D:\\Projeto Moises\\JogoBingo-master\\Inicial\\src\\inicial\\view\\TelaCreditos.png"));
 
         btnvoltar.setText("  ");
         btnvoltar.setBorder(null);
@@ -57,14 +62,14 @@ public class TelaCreditos extends javax.swing.JFrame {
         uJPanelImagem1Layout.setHorizontalGroup(
             uJPanelImagem1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, uJPanelImagem1Layout.createSequentialGroup()
-                .addContainerGap(163, Short.MAX_VALUE)
-                .addComponent(btnvoltar, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(163, 163, 163))
+                .addContainerGap(155, Short.MAX_VALUE)
+                .addComponent(btnvoltar, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(155, 155, 155))
         );
         uJPanelImagem1Layout.setVerticalGroup(
             uJPanelImagem1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, uJPanelImagem1Layout.createSequentialGroup()
-                .addContainerGap(252, Short.MAX_VALUE)
+                .addContainerGap(244, Short.MAX_VALUE)
                 .addComponent(btnvoltar, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(20, 20, 20))
         );
@@ -83,15 +88,13 @@ public class TelaCreditos extends javax.swing.JFrame {
         getAccessibleContext().setAccessibleParent(this);
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnvoltarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnvoltarActionPerformed
-        // TODO add your handling code here:
-        TelaInicial Tela = new TelaInicial();
-        Tela.show();
-        TelaCreditos TelaC = new TelaCreditos();
-        TelaC.hide();
-       
+     // Fecha a Janela
+        setVisible(false);  
+        dispose();   
        
         //System.exit(8);//fecha tudoDISPOSE_ON_EXIT
     }//GEN-LAST:event_btnvoltarActionPerformed

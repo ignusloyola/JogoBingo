@@ -23,6 +23,10 @@ public class TelaInicial extends javax.swing.JFrame {
         btnSair.setBackground(new Color(0,0,0,0) );
         uJPanelImagem1.setImagem(new java.io.File("src/inicial/view/TelaInicial.png"));
         //atualizacao de codigo
+        setResizable(false);
+        setMinimumSize(getMinimumSize());
+        // Mailton
+ 
     }
 
     /**
@@ -39,7 +43,14 @@ public class TelaInicial extends javax.swing.JFrame {
         btnCreditos = new javax.swing.JButton();
         btnSair = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setAlwaysOnTop(true);
+        setFocusTraversalPolicyProvider(true);
+        setLocationByPlatform(true);
+        setUndecorated(true);
+
+        uJPanelImagem1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 3, true));
+        uJPanelImagem1.setImagem(new java.io.File("D:\\Projeto Moises\\JogoBingo-master\\Inicial\\src\\inicial\\view\\TelaInicial.png"));
 
         btnJogar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -104,6 +115,7 @@ public class TelaInicial extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnJogarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJogarActionPerformed
@@ -116,7 +128,6 @@ public class TelaInicial extends javax.swing.JFrame {
       TelaCreditos tela=new TelaCreditos();
       tela.show();
       
-   
         // TODO add your handling code here:
     }//GEN-LAST:event_btnCreditosActionPerformed
 
