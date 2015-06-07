@@ -20,6 +20,10 @@ public class sorteio {
     ArrayList<String> dicionario = new ArrayList<String>();
     ArrayList<String> discricao = new ArrayList<String>();
     
+    ArrayList<String> Dici = new ArrayList<String>();
+    ArrayList<String> Dis = new ArrayList<String>();
+    
+    
     public void CarregarPalavras()
     {
         dicionario.add(0,"Zero");
@@ -244,6 +248,7 @@ public class sorteio {
         public void selecaoPalavras(JButton btn1, JButton btn2, JButton btn3, JButton btn4, JButton btn5, JButton btn6, JButton btn7, JButton btn8, JButton btn9, JButton btn10)
     {
         CarregarPalavras();
+        int num0 = 0;
         int num1 = 0;
         int num2 = 0;
         int num3 = 0;
@@ -253,65 +258,98 @@ public class sorteio {
         int num7 = 0;      
         int num8 = 0;      
         int num9 = 0;
-        int num10 = 0;
-                
-        boolean y=true;
         
-        				
+         
+        
+        		num0 = (int) (Math.random()*dicionario.size());
+			btn10.setText(dicionario.get(num0));
+                        btn10.setEnabled(true);
+                        Dici.add(0, dicionario.get(num0));
+                       // Dis.add(0, discricao.get(num0));
+                	dicionario.remove(num0);
+                        
+        
                         num1 = (int) (Math.random()*dicionario.size());
 			btn1.setText(dicionario.get(num1));
                         btn1.setEnabled(true);
+                        Dici.add(dicionario.get(num1));
+             //           Dis.add(discricao.get(num1));
                 	dicionario.remove(num1);
                         
                          num2 = (int) (Math.random()*dicionario.size());
 			btn2.setText(dicionario.get(num2));
                         btn2.setEnabled(true);
+                        Dici.add(dicionario.get(num2));
+              //          Dis.add(discricao.get(num2));
                 	dicionario.remove(num2);
                         
                          num3 = (int) (Math.random()*dicionario.size());
 			btn3.setText(dicionario.get(num3));
                         btn3.setEnabled(true);
+                        Dici.add(dicionario.get(num3));
+                //        Dis.add(discricao.get(num3));
                 	dicionario.remove(num3);
                         
                          num4 = (int) (Math.random()*dicionario.size());
 			btn4.setText(dicionario.get(num4));
                         btn4.setEnabled(true);
+                        Dici.add(dicionario.get(num4));
+               //         Dis.add(discricao.get(num4));
                 	dicionario.remove(num4);
                         
                          num5 = (int) (Math.random()*dicionario.size());
 			btn5.setText(dicionario.get(num5));
                         btn5.setEnabled(true);
+                        Dici.add(dicionario.get(num5));
+             //           Dis.add(discricao.get(num5));
                 	dicionario.remove(num5);
                         
                          num6 = (int) (Math.random()*dicionario.size());
 			btn6.setText(dicionario.get(num6));
                         btn6.setEnabled(true);
+                        Dici.add(dicionario.get(num6));
+               //         Dis.add(discricao.get(num6));
                 	dicionario.remove(num6);
                         
                          num7 = (int) (Math.random()*dicionario.size());
 			btn7.setText(dicionario.get(num7));
                         btn7.setEnabled(true);
+                        Dici.add(dicionario.get(num7));
+                //        Dis.add(discricao.get(num7));
                 	dicionario.remove(num7);
                         
                         
                          num8 = (int) (Math.random()*dicionario.size());
 			btn8.setText(dicionario.get(num8));
                         btn8.setEnabled(true);
+                        Dici.add(dicionario.get(num8));
+                //        Dis.add(discricao.get(num8));
                 	dicionario.remove(num8);
                         
                          num9 = (int) (Math.random()*dicionario.size());
 			btn9.setText(dicionario.get(num9));
                         btn9.setEnabled(true);
+                        Dici.add(dicionario.get(num9));
+                //        Dis.add(discricao.get(num9));
                 	dicionario.remove(num9);
                         
-                         num10 = (int) (Math.random()*dicionario.size());
-			btn10.setText(dicionario.get(num10));
-                        btn10.setEnabled(true);
-                	dicionario.remove(num10);
+                         
                         
 	
     }
+        public void sorteioLevel1(JLabel label)
+        {
+                       int num = 0;
+        			
+			num = (int) (Math.random()*Dici.size());
+			label.setText(Dici.get(num));
+                     //   label2.setText(Dis.get(num));
+                	Dici.remove(num);
+                    //    Dis.remove(num);
+                      
+        }
     
+        
     
      
 }

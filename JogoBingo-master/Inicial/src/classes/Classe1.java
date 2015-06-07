@@ -5,6 +5,7 @@
  */
 package classes;
 
+import javax.swing.JButton;
 import javax.swing.tree.TreeModel;
 
 
@@ -15,5 +16,17 @@ import javax.swing.tree.TreeModel;
 public class Classe1 {
     
     
+    
+    
+    
+    
+    public void escolhaBtn(JButton botao)
+    {
+        boolean x = true;
+        if(x==true)
+        {
+            botao.setVisible(false);
+        }
+    }
     
 }
