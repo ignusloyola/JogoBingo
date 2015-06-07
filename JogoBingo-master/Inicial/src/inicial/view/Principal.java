@@ -116,7 +116,31 @@ public class Principal extends javax.swing.JFrame {
                 lblLevel.setText("Level 1");
                 btnInicio.setVisible(false);
             break;
+                
+            case 2:
+                level.imgCoracaoPerde(img1);
+                level.imgCoracaoGanha(img2);
+                level.imgCoracaoGanha(img3);
+                habilitarBtnlevel1();
+                sorte.selecaoPalavras(btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9, btn10);
+                lblLevel.setText("Level 1");
+                btnInicio.setVisible(false);
+                 break;
            
+                 case 3:
+                level.imgCoracaoPerde(img1);
+                level.imgCoracaoPerde(img2);
+                level.imgCoracaoGanha(img3);
+                habilitarBtnlevel1();
+                sorte.selecaoPalavras(btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9, btn10);
+                lblLevel.setText("Level 1");
+                btnInicio.setVisible(false);
+                 break;
+           
+                 case 4:
+                //fim de jogo
+                 break;
+                     
         }
     }
     
