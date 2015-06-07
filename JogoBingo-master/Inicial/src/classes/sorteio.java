@@ -337,17 +337,40 @@ public class sorteio {
                         
 	
     }
-        public void sorteioLevel1(JLabel label)
+        public void sorteioLevel1(JLabel label, JLabel resu1, JLabel resu2, JLabel resu3 )
         {
                        int num = 0;
         			
 			num = (int) (Math.random()*Dici.size());
 			label.setText(Dici.get(num));
                      //   label2.setText(Dis.get(num));
-                	Dici.remove(num);
+                        
+                        if(resu1.getText().equals(""))
+                        {
+                            resu1.setText(Dici.get(num));
+                            Dici.remove(num);
+                        }
+                        else if(resu2.getText().equals(""))
+                        {
+                            resu1.setText(Dici.get(num));
+                            Dici.remove(num);
+                        }
+                        else if(resu3.getText().equals(""))
+                        {
+                            resu1.setText(Dici.get(num));
+                            Dici.remove(num);
+                        }
+                        else
+                        {
+                            resu1.setText(Dici.get(num));
+                            Dici.remove(num);
+                        }
+                        
+                	
                     //    Dis.remove(num);
                       
         }
+    
     
         
     
