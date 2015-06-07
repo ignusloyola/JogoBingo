@@ -40,7 +40,7 @@ public class level1 {
     
      public void imgCoracaoGanha(JLabel label)
     {
-        ImageIcon img = (new ImageIcon("src/inicial/view/imag/coração.jpg"));
+        ImageIcon img = (new ImageIcon("src/inicial/view/imag/coração cinza pronto.png"));
         label.setText("");
         label.setIcon(img);
     }
