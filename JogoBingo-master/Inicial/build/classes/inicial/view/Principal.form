@@ -280,12 +280,12 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" attributes="0">
                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                          <Component id="img1" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
                       <Component id="img2" alignment="1" max="32767" attributes="0"/>
                       <Component id="img3" alignment="1" max="32767" attributes="0"/>
+                      <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                          <Component id="img1" alignment="3" min="-2" pref="34" max="-2" attributes="0"/>
+                          <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
                   </Group>
                   <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
                   <Component id="jPanel5" max="32767" attributes="0"/>
@@ -302,23 +302,17 @@
         </Component>
         <Component class="javax.swing.JLabel" name="img1">
           <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/inicial/view/cora&#xe7;&#xe3;o cinza pronto.png"/>
-            </Property>
+            <Property name="text" type="java.lang.String" value="img1"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="img2">
           <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/inicial/view/cora&#xe7;&#xe3;o cinza pronto.png"/>
-            </Property>
+            <Property name="text" type="java.lang.String" value="img2"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="img3">
           <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/inicial/view/cora&#xe7;&#xe3;o cinza pronto.png"/>
-            </Property>
+            <Property name="text" type="java.lang.String" value="img3"/>
           </Properties>
         </Component>
         <Container class="javax.swing.JPanel" name="jPanel5">
@@ -577,7 +571,7 @@
                           <Component id="jButton59" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jButton60" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="178" max="32767" attributes="0"/>
+                      <EmptySpace pref="179" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
