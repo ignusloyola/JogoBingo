@@ -352,19 +352,15 @@ public class sorteio {
                         }
                         else if(resu2.getText().equals(""))
                         {
-                            resu1.setText(Dici.get(num));
+                            resu2.setText(Dici.get(num));
                             Dici.remove(num);
                         }
                         else if(resu3.getText().equals(""))
                         {
-                            resu1.setText(Dici.get(num));
+                            resu3.setText(Dici.get(num));
                             Dici.remove(num);
                         }
-                        else
-                        {
-                            resu1.setText(Dici.get(num));
-                            Dici.remove(num);
-                        }
+                        
                         
                 	
                     //    Dis.remove(num);
