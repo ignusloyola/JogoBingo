@@ -171,7 +171,7 @@ public class TelaInicial extends javax.swing.JFrame {
             }
         });
     }
-//ui vou fazer comit de novo
+//corações alterados
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnCreditos;
     private javax.swing.JButton btnJogar;
