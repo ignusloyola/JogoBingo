@@ -342,21 +342,24 @@ public class sorteio {
                        int num = 0;
         			
 			num = (int) (Math.random()*Dici.size());
-			label.setText(Dici.get(num));
+			
                      //   label2.setText(Dis.get(num));
                         
                         if(resu1.getText().equals(""))
                         {
+                            label.setText(Dici.get(num));
                             resu1.setText(Dici.get(num));
                             Dici.remove(num);
                         }
                         else if(resu2.getText().equals(""))
                         {
+                            label.setText(Dici.get(num));
                             resu2.setText(Dici.get(num));
                             Dici.remove(num);
                         }
                         else if(resu3.getText().equals(""))
                         {
+                            label.setText(Dici.get(num));
                             resu3.setText(Dici.get(num));
                             Dici.remove(num);
                         }
